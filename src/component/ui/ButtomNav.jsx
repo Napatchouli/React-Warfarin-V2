@@ -1,4 +1,5 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom';
 import { LuFileHeart } from 'react-icons/lu';
 import { BsSearchHeartFill } from 'react-icons/bs';
 import { TbClockHeart } from 'react-icons/tb';
@@ -9,26 +10,24 @@ const spanCSS = 'text-sm text-gray-500 dark:text-gray-400 group-hover:text-blue-
 
 function ButtomNav() {
   return (
-
-
-    <div class="fixed bottom-0 left-0 w-full h-16 bg-white border-t border-gray-200 dark:bg-gray-700 dark:border-gray-600">
-      <div class="grid h-full max-w-lg grid-cols-4 mx-auto font-medium">
-        <button type="button" class="inline-flex flex-col items-center justify-center px-5 hover:bg-gray-50 dark:hover:bg-gray-800 group">
-          <LuFileHeart class={IconCSS} />
-          <span class={spanCSS}>Guideline</span>
-        </button>
-        <button type="button" class="inline-flex flex-col items-center justify-center px-5 hover:bg-gray-50 dark:hover:bg-gray-800 group">
-          <GiHeartInside class={IconCSS}/>
-          <span class="text-sm text-gray-500 dark:text-gray-400 group-hover:text-blue-600 dark:group-hover:text-blue-500">INR</span>
-        </button>
-        <button type="button" class="inline-flex flex-col items-center justify-center px-5 hover:bg-gray-50 dark:hover:bg-gray-800 group">
-          <BsSearchHeartFill class={IconCSS}/>
-          <span class="text-sm text-gray-500 dark:text-gray-400 group-hover:text-blue-600 dark:group-hover:text-blue-500">TWD</span>
-        </button>
-        <button type="button" class="inline-flex flex-col items-center justify-center px-5 hover:bg-gray-50 dark:hover:bg-gray-800 group">
-          <TbClockHeart class={IconCSS} />
-          <span class="text-sm text-gray-500 dark:text-gray-400 group-hover:text-blue-600 dark:group-hover:text-blue-500">Follow-up</span>
-        </button>
+    <div className="fixed bottom-0 left-0 w-full h-16 bg-white border-t border-gray-200 dark:bg-gray-700 dark:border-gray-600">
+      <div className="grid h-full max-w-lg grid-cols-4 mx-auto font-medium">
+        <NavLink to='/guideline' className="inline-flex flex-col items-center justify-center px-5 hover:bg-gray-50 dark:hover:bg-gray-800 group">
+          <LuFileHeart className={IconCSS} />
+          <span className={spanCSS}>Guideline</span>
+        </NavLink>
+        <NavLink to='/' className="inline-flex flex-col items-center justify-center px-5 hover:bg-gray-50 dark:hover:bg-gray-800 group">
+          <GiHeartInside className={IconCSS}/>
+          <span className={spanCSS}>INR</span>
+        </NavLink>
+        <NavLink to='/twd' className="inline-flex flex-col items-center justify-center px-5 hover:bg-gray-50 dark:hover:bg-gray-800 group">
+          <BsSearchHeartFill className={IconCSS}/>
+          <span className={spanCSS}>TWD</span>
+        </NavLink>
+        <NavLink to='/' className="inline-flex flex-col items-center justify-center px-5 hover:bg-gray-50 dark:hover:bg-gray-800 group">
+          <TbClockHeart className={IconCSS} />
+          <span className={spanCSS}>Follow-up</span>
+        </NavLink>
       </div>
     </div>
   )

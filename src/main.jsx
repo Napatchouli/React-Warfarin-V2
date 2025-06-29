@@ -7,12 +7,13 @@ import GuidelinePage from './pages/GuidelinePage'
 import Button from './component/ui/button'
 import INRPage from './pages/INRPage'
 import TWDPage from './pages/TWDPage'
+import INRResult_Card from './component/ui/INRResult_Card'
 
 
 createRoot(document.getElementById('root')).render(
   <StrictMode >
     <Navbar/>
-    <TWDPage/>
+    <INRResult_Card/>
     <ButtomNav/>
   </StrictMode>,
 )

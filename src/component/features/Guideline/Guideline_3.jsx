@@ -2,7 +2,7 @@ import React from 'react'
 const trCSS = "bg-white border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600";
 const thCSS = "px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white";
 
-function Guideline_V3() {
+function GuideLine_3() {
     return (
         <div className='inset-0 flex items-center justify-center min-h-screen'>
 
@@ -93,4 +93,4 @@ function Guideline_V3() {
     )
 }
 
-export default Guideline_V3
+export default GuideLine_3

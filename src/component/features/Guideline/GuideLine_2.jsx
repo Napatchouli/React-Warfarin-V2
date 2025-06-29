@@ -2,7 +2,7 @@ import React from 'react'
 const trCSS = "bg-white border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600";
 const thCSS = "px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white";
 
-function GuidelineDC() {
+function Guideline_2() {
   return (
         <div className='inset-0 flex items-center justify-center min-h-screen'>
        <div class="relative overflow-x-auto overflow-y-auto shadow-md sm:rounded-lg">
@@ -90,4 +90,4 @@ function GuidelineDC() {
   )
 }
 
-export default GuidelineDC
+export default Guideline_2

@@ -1,9 +1,9 @@
 import React from 'react'
 
-function Followup() {
+function FollowupPage() {
   return (
     <div>Followup</div>
   )
 }
 
-export default Followup
+export default FollowupPage
